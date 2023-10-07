@@ -5,6 +5,10 @@ public class HitungBiayaParkir {
         // Membuat objek Scanner untuk menerima input dari pengguna
         Scanner input = new Scanner(System.in);
 
+        // Pesan selamat datang
+        System.out.println("Selamat datang di Parkiran Kami!");
+        System.out.println("============================================");
+
         // Input jam masuk, jam keluar, dan biaya per jam
         System.out.print("Masukkan jam masuk: ");
         int jamMasuk = input.nextInt();
@@ -19,8 +23,14 @@ public class HitungBiayaParkir {
         // Menghitung biaya parkir
         int biayaParkir = lamaParkir * biayaPerjam;
 
-        // Menampilkan biaya parkir
-        System.out.println("Biaya Parkir = " + biayaParkir);
+        // Menampilkan hasil
+        System.out.println("============================================");
+        System.out.println("Lama Parkir: " + lamaParkir + " jam");
+        System.out.println("Biaya Parkir: Rp " + biayaParkir);
+        System.out.println("============================================");
+
+        // Pesan terima kasih
+        System.out.println("Terima kasih telah Berkunjung Ke Program Parkir @hadygunawan16 !");
 
         // Menutup objek Scanner
         input.close();
